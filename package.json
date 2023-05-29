@@ -1,11 +1,22 @@
 {
-  "name": "cs-modal",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "modal-resizable",
+  "description": "A pure JavaScript implementation of Resize model With Drag.",
+  "version": "1.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csrutvik/cs-modal"
   },
-  "author": "",
-  "license": "ISC"
+  "author": {
+    "name": "Rutvik Shah",
+    "email": "csrutvik@gmail.com",
+    "url": "https://github.com/csrutvik"
+  },
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "module": "js/ng-cs-modal.js",
+  "js": "js/ng-cs-modal.js",
+  "typings": "ng-cs-modal.d.ts",
+  "sideEffects": false
 }

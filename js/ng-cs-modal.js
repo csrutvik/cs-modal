@@ -669,4 +669,4 @@ i0.ɵɵngDeclareClassMetadata({
  */
 
 export { ModalComponent, ModalModule };
-//# sourceMappingURL=ng-modal-lib.js.map
+//# sourceMappingURL=ng-cs-modal.js.map

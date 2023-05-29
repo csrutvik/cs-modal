@@ -1,0 +1,34 @@
+import { ElementRef, EventEmitter, OnDestroy, OnChanges, SimpleChanges, NgZone } from '@angular/core';
+import * as i0 from "@angular/core";
+export declare class DraggableDirective implements OnChanges, OnDestroy {
+    private element;
+    private ngZone;
+    dragEventTarget: MouseEvent | TouchEvent;
+    dragX: boolean;
+    dragY: boolean;
+    inViewport: boolean;
+    dragStart: EventEmitter<any>;
+    dragMove: EventEmitter<any>;
+    dragEnd: EventEmitter<any>;
+    isDragging: boolean;
+    lastPageX: number;
+    lastPageY: number;
+    private globalListeners;
+    private elementWidth;
+    private elementHeight;
+    private vw;
+    private vh;
+    constructor(element: ElementRef, ngZone: NgZone);
+    ngOnChanges(changes: SimpleChanges): void;
+    ngOnDestroy(): void;
+    onMousedown(event: MouseEvent | TouchEvent): void;
+    onMousemove(event: MouseEvent | TouchEvent): void;
+    onMouseup(event: MouseEvent | TouchEvent): void;
+    addEventListeners(event: MouseEvent | TouchEvent): void;
+    removeEventListener(): void;
+    initDrag(pageX: number, pageY: number): void;
+    onDrag(pageX: number, pageY: number): void;
+    endDrag(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DraggableDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<DraggableDirective, "[appDraggable]", never, { "dragEventTarget": "dragEventTarget"; "dragX": "dragX"; "dragY": "dragY"; "inViewport": "inViewport"; }, { "dragStart": "dragStart"; "dragMove": "dragMove"; "dragEnd": "dragEnd"; }, never>;
+}
